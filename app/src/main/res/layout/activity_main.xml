@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.lz.locationsample.MainActivity">
+
+    <Button
+        android:id="@+id/get_last_known_location_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="getLastKnownLocation" />
+
+    <TextView
+        android:id="@+id/last_known_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="上次定位位置：" />
+
+    <TextView
+        android:id="@+id/location_provider"
+        android:layout_width="wrap_content"
+        android:hint="位置提供者："
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/fix_satellites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="定位卫星数：" />
+
+    <ListView
+        android:id="@+id/location_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
